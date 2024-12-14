@@ -1,0 +1,118 @@
+:root {
+  --blue: #37517e;
+}
+nav {
+  /* position: fixed !important;
+  top: 0 !important;
+  background-color: var(--blue) !important;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  z-index: 999; */
+}
+.text-blue {
+  color: var(--blue);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.front {
+  background-color: var(--blue);
+}
+.front a {
+  color: white !important;
+}
+.dropdown-menu a {
+  color: black !important;
+}
+.back {
+  animation: asad 2s alternate infinite;
+}
+@keyframes asad {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+.gery {
+  background-color: lightslategray;
+  width: 100%;
+  height: 2px;
+  border-radius: 60px;
+  position: relative;
+  /* text-align: center; */
+  margin: auto;
+}
+.max-content {
+  width: max-content;
+  margin: auto;
+}
+.blue {
+  background-color: var(--bs-info);
+  position: absolute;
+  top: 50%;
+  border-radius: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 5px;
+
+  margin: auto;
+}
+.services {
+  /* transform: translateY(-20px); */
+  transition: all 0.5s ease-out;
+}
+.services:hover {
+  /* color: var(--blue); */
+  transform: translateY(-10px);
+}
+
+/* .img-gb {
+  background-image: url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg");
+} */
+.img-gb {
+  background: linear-gradient(rgba(55, 81, 126, 0.5), rgba(55, 81, 126, 0.8)),
+    url("https://bootstrapmade.com/content/demo/Arsha/assets/img/cta-bg.jpg")
+      fixed;
+}
+.img-parent {
+  overflow: hidden;
+}
+.img-content {
+  bottom: 0;
+  width: 100%;
+  transform: translateY(80px);
+  transition: all 0.4s;
+}
+.img-parent:hover .img-content {
+  transform: translate(0);
+}
+
+.d-icon:hover {
+  background-color: var(--bs-info);
+  height: 70px;
+  width: 70px;
+  clip-path: circle();
+  color: white;
+}
+.teams {
+  /* transform: translateY(-20px); */
+  transition: all 0.5s;
+}
+.teams:hover {
+  transform: translateY(-20px);
+}
+@media (max-width: 1000px) {
+  .my-img {
+    width: 40% !important;
+    display: block !important;
+
+    margin: auto !important;
+  }
+  .my-hr {
+    margin: auto !important;
+  }
+}
